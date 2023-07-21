@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
- name: backend-test
+ name: backend_spring_boot
 spec:
  type: NodePort
  selector:
-   app: backend-test
+   app: backend_spring_boot
    env: prod
  ports:
  - name: test
